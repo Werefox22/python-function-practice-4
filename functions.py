@@ -31,3 +31,25 @@ print("\nrev_string tests:")
 print(rev_string("string"))
 print(rev_string("Panama"))
 print(rev_string("Hello, world!"))
+
+def num_within(num, start, end):
+	return num >= start and num <= end
+
+print("\nnum_within tests:")
+print(num_within(1, 0, 10)) 	# True
+print(num_within(10, 1, 10))	# True
+print(num_within(10, 10, 11))	# True
+print(num_within(10, 11, 100))	# False
+print(num_within(1.5, 0, 3))	# True
+print(num_within(3.1, 0, 3))	# False
+print(num_within(-5, 1, 10))	# False
+print(num_within(-5, -1, 10))	# False
+print(num_within(-5, -10, 1))	# True
+print(num_within(5, 10, 1))		# False (While 5 is inbetween 1 and 10, the start and end are switched)
+print(num_within(10, 8, 2))		# False (Start and end are switched again)
+
+def pascal(n):
+	if :
+		return
+	else:
+		return pascal()
