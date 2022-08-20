@@ -23,3 +23,11 @@ print(mult_list([-1, 1, 1, 1, 1, 1, -1]))
 print(mult_list([]))
 print(mult_list([1000, -2000, -3000, 4000]))
 print(mult_list([1000000, 1000000, 0]))
+
+def rev_string(string):
+	return string[::-1]
+
+print("\nrev_string tests:")
+print(rev_string("string"))
+print(rev_string("Panama"))
+print(rev_string("Hello, world!"))
