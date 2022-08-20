@@ -48,8 +48,25 @@ print(num_within(-5, -10, 1))	# True
 print(num_within(5, 10, 1))		# False (While 5 is inbetween 1 and 10, the start and end are switched)
 print(num_within(10, 8, 2))		# False (Start and end are switched again)
 
+# diagram:
+# pascal(3)
+#	get third row -> pascal(2)
+
 def pascal(n):
-	if :
-		return
+	if n == 1:
+		print('1')
+		return [1]
 	else:
-		return pascal()
+		top_row = pascal(n - 1)
+		this_row = []
+		for i in range(0, len(top_row)):
+			if i == 0 or i == len(top_row):
+				this_row.append(1)
+			else:
+				this_row.append(top_row[])
+		return pascal(n - 1)
+
+print("\npascal tests:")
+pascal(1)
+pascal(3)
+pascal(10)
