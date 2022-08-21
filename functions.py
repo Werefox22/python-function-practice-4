@@ -60,10 +60,9 @@ def pascal(n):
 		row = pascal(n - 1)
 		print(row)
 		next_row = [1, 1]
-		for i in range(1, len(row)):
+		for i in range(1, n):
 			next_row.insert(1, row[i - 1] + row[i])
 		return next_row
-
 
 print("\npascal tests:")
 pascal(1)
