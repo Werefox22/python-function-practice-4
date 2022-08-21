@@ -54,17 +54,16 @@ print(num_within(10, 8, 2))		# False (Start and end are switched again)
 
 def pascal(n):
 	if n == 1:
-		print('1')
-		return [1]
+		print([1])
+		return [1, 1]
 	else:
-		top_row = pascal(n - 1)
-		this_row = []
-		for i in range(0, len(top_row)):
-			if i == 0 or i == len(top_row):
-				this_row.append(1)
-			else:
-				this_row.append(top_row[])
-		return pascal(n - 1)
+		row = pascal(n - 1)
+		print(row)
+		next_row = [1, 1]
+		for i in range(1, len(row)):
+			next_row.insert(1, row[i - 1] + row[i])
+		return next_row
+
 
 print("\npascal tests:")
 pascal(1)
